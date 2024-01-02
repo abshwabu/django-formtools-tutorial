@@ -12,7 +12,7 @@ class GuestDetail(forms.ModelForm):
 
 
 class BusinessDetails(forms.ModelForm):
-    
+
     class Meta:
         model = Business
-        fields = ('name')
+        fields = ('name',)
