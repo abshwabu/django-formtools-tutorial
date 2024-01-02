@@ -1,5 +1,5 @@
 from django import forms
-from .models import Guest
+from .models import Guest,Business
 
 class GuestDetail(forms.ModelForm):
     Bool_options = [{True, 'Yes'}, {False, 'No'}]
@@ -9,3 +9,10 @@ class GuestDetail(forms.ModelForm):
     class Meta:
         model = Guest
         fields = ('first_name', 'last_name', 'email','phone' )
+
+
+class BusinessDetails(forms.ModelForm):
+    
+    class Meta:
+        model = Business
+        fields = ('name')
