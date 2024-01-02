@@ -24,3 +24,4 @@ class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
         fields =('room_type', 'date','number_of_nights')
+        widgets = {'date': forms.DateInput(attrs={'type': 'date'})}
